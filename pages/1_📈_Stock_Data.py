@@ -27,7 +27,7 @@ def main():
   
   with st.sidebar: 
       st.sidebar.title("Stock Search")
-      Stocklist = pd.read_excel("Stocklist.xlsx")
+      Stocklist = pd.read_excel("pages/1_Sources P1/Stocklist.xlsx")
       StocksnTickers = Stocklist.iloc[1:, [0,1]]
       StocksnTickers.columns = ['Ticker', 'Company Name']
       
